@@ -1,0 +1,90 @@
+[
+	{
+		"path" : "/",
+		"controller" : "Home",
+		"action" : "home",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+    },
+	{
+		"path" : "/Forum",
+		"controller" : "Forum",
+		"action" : "Forum",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+	},	
+	{
+		"path" : "/Adress",
+		"controller" : "Adress",
+		"action" : "Adress",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+	},
+	{
+		"path" : "/Register",
+		"controller" : "Register",
+		"action" : "Register",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+	},
+    {
+		"path" : "/login",
+		"controller" : "User",
+		"action" : "login",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+    },
+    {
+		"path" :"/authenticated",
+		"controller" :"User",
+		"action" :"authenticated",
+		"method" :"POST",
+		"param" :["login","password"],
+		"manager":["User"]
+    },
+    {
+		"path" : "/Error",
+		"controller" : "Error",
+		"action" : "Show",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+    },
+	{
+		"path" : "/zebi",
+		"controller" : "Home",
+		"action" : "home",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+	},
+	{
+		"path" : "/Subscribe",
+		"controller" :"Subscribe",
+		"action" :"Subscribe",
+		"method" :"GET",
+		"param" : [],
+		"manager": []
+	},
+	{
+		"path" :"/Insert",
+		"controller" :"Subscribe",
+		"action" :"Insert",
+		"method" :"POST",
+		"param" :["login","password"],
+		"manager":["User"]
+    },
+	{
+		"path" : "/Name",
+		"controller" : "Name",
+		"action" : "Name",
+		"method" : "GET",
+		"param" : [],
+		"manager": []
+	}
+]

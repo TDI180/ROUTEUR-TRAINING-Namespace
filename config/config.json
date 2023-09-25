@@ -1,0 +1,46 @@
+{
+	"autoloadFolder":[
+		"Framework",
+		"Controller",
+		"Model",
+		"View",	
+		"Framework/Exception",
+		"Model/Name",
+		"Model/Manager",
+		"Model/Entite",
+		"Model/Forum",	
+		"Model/Adress",
+		"Model/Register",
+		"Model/Subscribe",		
+		"View/Name",
+		"View/Forum",
+		"View/Adress",
+		"View/Register",
+		"View/Subscribe"			     
+	                ],
+		
+	"database-mvc":  {
+           			  "name": "mvc",
+           			  "host": "localhost",
+          			  "user": "root",
+                      "password": "",
+					  "table": "customer"
+                 },
+
+	"database-blog":  {
+				   "name": "blog",
+				   "host": "localhost",
+				   "user": "root",
+				   "password": "",
+				   "table": "article"
+			     },	
+	"database-mvc-2": {
+					"name": "mvc",
+					"host": "localhost",
+					"user": "root",
+					"password": "",
+					"table": "register"
+				},	
+
+	"basepath": "PHP/Routeur-Training-dev/"
+}

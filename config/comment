@@ -1,0 +1,7 @@
+$this->_httpRequest= $httpRequest
+$httpRequest->getRoute()=$this->_route
+
+$this->_route->getManager()
+
+
+impossible de reperer new manager ()
