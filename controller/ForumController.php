@@ -9,6 +9,7 @@ class ForumController extends BaseController
 					public function Forum()
 							{
 							  $this->ForumModel=new ForumModel("blog","article");	//construct-the-view--Call the model										
+							 // $this->ForumModel=new ForumModel("blog","article");
 							  $content_forum=$this->ForumModel->article();//content of the view
 							 	
 							  ob_start();

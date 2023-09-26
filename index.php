@@ -7,7 +7,8 @@
     //require_once '../CAR/autoloader.php';
 	require_once ('../Routeur-Training-dev-Namespace/autoloader.php');
 	$autoloader=new autoloader($config);
-	$autoloader::register();	
+	$autoloader::register();
+	echo "zebi".'</br>';	
 	try
 	{
       // var_dump($config);
@@ -16,12 +17,12 @@
 	
 		//echo 'try---------->'.$config->basepath.'</br>';
 		//require_once('Framework/httpRequest.php');
-		$httpRequest = new HttpRequest();
-        $router = new Router();
-		$httpRequest->setRoute($router->findRoute($httpRequest,$config->basepath)); 
+		//$httpRequest = new HttpRequest();
+        //$router = new Router();
+		//$httpRequest->setRoute($router->findRoute($httpRequest,$config->basepath)); 
 		// $httpRequest= "/" ou forum----- 
 		//$config->basepath="PHP/Routeur-Training-dev/" chemin vers l index.php
-        $httpRequest->run($config);
+       // $httpRequest->run($config);
 		//echo '//-----------------------try---Http------------------------------------//'.'</br>';
 		//var_dump ( $httpRequest->run($config));
 	}
