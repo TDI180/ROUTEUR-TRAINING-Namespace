@@ -15,12 +15,12 @@ class autoloader
 											//spl_autoload_register('autoload');
 											//echo __CLASS__.'</br>';	
 											spl_autoload_register([__CLASS__,'autoload']);
-											spl_autoload_register([__CLASS__,'autoloadfolder']);
+											//spl_autoload_register([__CLASS__,'autoloadfolder']);
 											}	
 											
 				public static function geters()// static function called with self
 				               {
-					            var_dump(self::$configZ);
+					            var_dump(self::$config);
 				               } 							
 	
 			    static function autoload($class)
