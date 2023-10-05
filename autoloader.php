@@ -30,7 +30,7 @@ class autoloader
 									{
 									 if(file_exists($folder.'/'.$class.'.php'))
 										{
-										//var_dump ($class);
+										//var_dump ($folder);
 										 $class=str_replace(__NAMESPACE__ . '\\','',$class);
 										 var_dump ($class);
 										 $class=str_replace('\\','/',$class);
