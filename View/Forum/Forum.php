@@ -1,5 +1,5 @@
 <?php
-//namespace Forum;
+namespace Forum;
    //include("View/layout.php");
   //echo $content_view_forum;
  // echo $contentView;

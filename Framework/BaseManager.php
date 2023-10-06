@@ -1,6 +1,5 @@
 <?php
-
-		class BaseManager 
+class BaseManager 
         {
             private $_table;
             private $_object;

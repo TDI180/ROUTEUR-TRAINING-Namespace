@@ -1,4 +1,5 @@
 <?php
+//namespace Forum;
 class ForumModel extends BaseManager
                                 {
                                     public function __construct($name,$table)

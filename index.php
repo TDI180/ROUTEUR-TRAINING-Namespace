@@ -22,7 +22,7 @@
 		$httpRequest->setRoute($router->findRoute($httpRequest,$config->basepath)); 
 		// $httpRequest= "/" ou forum----- 
 		//$config->basepath="PHP/Routeur-Training-dev/" chemin vers l index.php
-         $httpRequest->run($config);
+        $httpRequest->run($config);
 		//echo '//-----------------------try---Http------------------------------------//'.'</br>';
 		//var_dump ( $httpRequest->run($config));
 	}

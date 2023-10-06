@@ -29,10 +29,11 @@ class autoloader
 					foreach(self::$config->autoloadFolder as $folder)
 									{
 									 if(file_exists($folder.'/'.$class.'.php'))
-										{
-										//var_dump ($folder);
+										{										
+										var_dump ($folder);
+										echo $folder.'/'.$class.'.php'."</br>";
 										 $class=str_replace(__NAMESPACE__ . '\\','',$class);
-										 var_dump ($class);
+										 //var_dump ($class);
 										 $class=str_replace('\\','/',$class);
 										// var_dump ($class);		
 										 require_once($folder . '/' . $class . '.php');	
@@ -43,27 +44,6 @@ class autoloader
 										}
 									}
 								}  
-				static function autoloadfolder($class)
-								{
-								   //self::geters();
-								   foreach(self::$config->autoloadFolder as $folder)
-												   {
-													if(file_exists($folder.'/'.$class.'.php'))
-													   {
-														echo  $folder.'/'.$class.'.php';  
-													   //var_dump ($class);
-														$class=str_replace(__NAMESPACE__ . '\\','',$class);
-														var_dump ($class);
-														$class=str_replace('\\','/',$class);
-													   // var_dump ($class);		
-														require_once($folder . '/'. $class . '.php');															
-														// echo 	$folder.'/'.$class.'.php'.'</br>';
-														//you can see on the screen the include folder,file.php										  
-														 break;
-													   }
-												   }
-											   }   				
-								
-
+				
            }                                           
 						 
