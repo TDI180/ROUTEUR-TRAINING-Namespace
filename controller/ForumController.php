@@ -1,5 +1,6 @@
 <?php
 //namespace Forum;
+
 class ForumController extends BaseController
 					{	
 					private $Model;

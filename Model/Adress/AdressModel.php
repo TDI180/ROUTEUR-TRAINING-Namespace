@@ -7,8 +7,6 @@
                                                      parent::__construct($name,$table);
                                                     }     
 
-
-
                                     public function Injection()
                                     {
 ?>

@@ -1,5 +1,6 @@
 <?php
-echo __NAMESPACE__.'</br>';
+namespace bm;
+
 	class HttpRequest
 	{
 		private $_url;

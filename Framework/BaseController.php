@@ -1,5 +1,5 @@
 <?php
-//namespace Forum;
+//namespace BaseController;
 //include ("Exception/ViewNotFoundException.php");
 
 class BaseController
