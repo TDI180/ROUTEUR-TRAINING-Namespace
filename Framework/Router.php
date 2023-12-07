@@ -26,7 +26,6 @@ echo __NAMESPACE__.'</br>';
 			//ECHO '====$url='.$url.'======='.'</br>';
 			//var_dump ($url);
 			$method = $httpRequest->getMethod();
-
 			//var_dump ($method);
 			$routeFound = array_filter($this->_listRoute,function($route) use ($url,$method)
 			{
