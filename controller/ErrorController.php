@@ -13,10 +13,10 @@
 		public function Show($exception)
 		{
 			//var_dump ($exception);
-			echo '</br>';
+			echo '-----SHOW--------</br>';
 			$this->addParam("exception",$exception);
 			$this->view($exception);	
-			echo '------------------------SHOW--------------------------------'.'</br>';
+			echo '------------------------SHOW-HONDA--------------------------------'.'</br>';
 			//$this->zebi();		
 			//echo $exception->getMessage().'</br>'; 			
 			//echo $exception->getTraceAsString().'</br>';

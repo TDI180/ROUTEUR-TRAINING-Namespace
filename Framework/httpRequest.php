@@ -1,5 +1,5 @@
 <?php
-namespace bm;
+namespace HttpRequest;
 
 	class HttpRequest
 	{
@@ -56,7 +56,6 @@ namespace bm;
 
 					
 				case "POST":
-
 
 				case "PUT":
 					foreach($this->_route->getParam() as $param)

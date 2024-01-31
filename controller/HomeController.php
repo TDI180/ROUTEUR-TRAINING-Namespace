@@ -1,5 +1,7 @@
 <?php
-	class HomeController extends BaseController
+   namespace  Home;
+   use BaseController as B ;
+   class HomeController extends B\BaseController
 					{
 						public function Home()
 						{

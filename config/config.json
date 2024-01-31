@@ -18,30 +18,47 @@
 		"View/Adress",
 		"View/Register",
 		"View/Subscribe"			     
-	],
-		
-	"database-mvc":  {
-           			  "name": "mvc",
-           			  "host": "localhost",
-          			  "user": "root",
-                      "password": "",
-					  "table": "customer"
-                 },
+	]
+	,
+	"Namespace":
+	[
+		"BDD-PDO",
+		"BDD-BDD",
+		"FileManager-FileManager",
+		"BaseManager-BaseManager",
+		"Route-Route",				
+		"HttpRequest-HttpRequest",
+		"Router-Router",	
+		"BaseController-BaseController",		
+		"Home-HomeController",
+		"Forum-ForumController",
+		"VIEWForum-Forum",	
+		"Route-ControllerNotFoundException"
+	]
+	,		
+	"database-mvc":     {
+											"name": "mvc",
+											"host": "localhost",
+											"user": "root",
+											"password": "",
+											"table": "customer"
+                                            },
 
-	"database-blog":  {
-				   "name": "blog",
-				   "host": "localhost",
-				   "user": "root",
-				   "password": "",
-				   "table": "article"
-			     },	
+	"database-blog":     {
+											"name": "blog",
+											"host": "localhost",
+											"user": "root",
+											"password": "",
+											"table": "article"
+			                                },	
+
 	"database-mvc-2": {
-					"name": "mvc",
-					"host": "localhost",
-					"user": "root",
-					"password": "",
-					"table": "register"
-				},	
+											"name": "mvc",
+											"host": "localhost",
+											"user": "root",
+											"password": "",
+											"table": "register"
+			                                },	
 
 	"basepath": "PHP/Routeur-Training-dev/"
 }

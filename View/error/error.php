@@ -1,6 +1,6 @@
 <div class="error">
     
-	<h1>Une erreur s'est produite</h1>
+	<h1>Une erreur s'est produite Bobby</h1>
 	<div class="error-message">Message : <?= $a->getMessage().'</br>'; ?></div>
 	<div class="error-stack">Pile d'execution : <?= $a->getTraceAsString().'--------->>>>>----</br>'; ?></div>
    

@@ -1,5 +1,5 @@
 <?php
-//namespace Forum;
+namespace FileManager;
 	class FileManager
 	{
 		private $_listJsFile;

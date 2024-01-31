@@ -1,6 +1,8 @@
 <?php
-//namespace Forum;
-class ForumModel extends BaseManager
+namespace Forum;
+use  BaseManager as BM;
+
+class ForumModel extends BM\BaseManager
                                 {
                                     public function __construct($name,$table)
                                                     {
