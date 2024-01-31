@@ -1,10 +1,7 @@
-<?php
-namespace Forum;
-   //include("View/layout.php");
-  //echo $content_view_forum;
- // echo $contentView;
- ?>
-
+<?php  
+ namespace Forum;      
+ ?> 
+ 
  <div class="container">
 
     <div class="jumbotron">
@@ -15,7 +12,10 @@ namespace Forum;
 
 <div class="container">
                 <div class="jumbotron">
-                        <?php echo $contentView;?>
+                                     <?php  
+                                                                                                      
+                                                    echo $contentView;                        
+                                    ?>
                 </div>    
 </div>
 

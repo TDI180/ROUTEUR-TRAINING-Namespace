@@ -1,6 +1,6 @@
 <?php
 
- class ViewNotFoundException extends Exception
+ class ViewNotFoundException extends \Exception
     {
 
         private $_httpRequest;

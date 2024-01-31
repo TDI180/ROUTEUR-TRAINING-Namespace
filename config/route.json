@@ -64,8 +64,8 @@
 		"manager": []
     },
 	{
-		"path" : "/zebi",
-		"controller" : "Home",
+		"path" : "/Pizza",
+		"controller" : "Pizza",
 		"action" : "home",
 		"method" : "GET",
 		"param" : [],

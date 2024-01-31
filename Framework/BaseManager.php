@@ -1,4 +1,7 @@
 <?php
+namespace  BaseManager ;
+use BDD as BDD;
+
 class BaseManager 
         {
             private $_table;
@@ -8,7 +11,7 @@ class BaseManager
             
             public function __construct($database,$table)
             {               
-                echo 'I am in '.__CLASS__.'</br>';
+                //echo 'I am in '.__CLASS__.'</br>';
                 $this->_table = $database;
                 $this->_object = $table;
               
@@ -31,7 +34,7 @@ class BaseManager
 
                     $configFileUser = file_get_contents("Config/config.json");
                     $this->_datasource= json_decode($configFileUser,true);	        
-                    $this->_bdd = BDD::getInstance($this->_datasource,$database,$table); 
+                    $this->_bdd = BDD\BDD::getInstance($this->_datasource,$database,$table); 
                     // creation de la base de donnée ou verification de son existence
                     //dont forget , the autoloader loads the BDD Throught Framework/BDD.php
                     //var_dump ($this->_bdd)."</br>";  
@@ -45,7 +48,7 @@ class BaseManager
             {
                 $req = $_bdd->prepare("SELECT * FROM " . $this->_table . " WHERE id=?");
                 $req->execute(array($id));
-                $req->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,$this->_object);
+                $req->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE,$this->_object);
                 return $req->fetch();
             }
             
@@ -54,7 +57,7 @@ class BaseManager
                 $req = $this->_bdd->prepare("SELECT * FROM " .$this->_object);
                 $req->execute();
                // $req->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,$this->_object);
-                $req->setFetchMode(PDO::FETCH_OBJ);
+                $req->setFetchMode(\PDO::FETCH_OBJ);
                 //$req->setFetchMode(PDO::FETCH_COLUMN,4);
                 return $req->fetchAll();                
             }

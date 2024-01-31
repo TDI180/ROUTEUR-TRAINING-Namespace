@@ -1,8 +1,7 @@
 <?php
-//namespace BaseController;
-//include ("Exception/ViewNotFoundException.php");
-
-class BaseController
+   namespace  BaseController ;
+   use FileManager as F;
+   class BaseController
 {
 	private $_httpRequest;
 	private $_param;
@@ -17,7 +16,7 @@ class BaseController
 		$this->addParam("httprequest",$this->_httpRequest);
 		$this->addParam("config",$this->_config);
 		//$this->bindManager();
-		$this->_FileManager = new FileManager();
+		$this->_FileManager = new F\FileManager();
 	}
 	
 	protected function view($filename,$login,$password,$TitleView,$contentView)
@@ -37,9 +36,9 @@ class BaseController
 		if(file_exists("View/".$this->_httpRequest->getRoute()->getController()."/".$filename.".php"))
 		{
 		
-			                ob_start();			  
-				             echo $this->_FileManager->generateCss();
-				             echo $this->_FileManager->generateJs();	
+			                                     ob_start();			  
+				                                                       echo $this->_FileManager->generateCss();
+				                                                       echo $this->_FileManager->generateJs();	
 			$content_CSS_JS=ob_get_clean();
 			
 		include("View/layout.php");

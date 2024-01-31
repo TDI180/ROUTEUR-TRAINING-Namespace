@@ -1,5 +1,10 @@
 <?php  
-	class Route
+namespace Route;
+use BaseController as B;
+use NoControl          as NoCtrl;
+use NoAction            as  NoAct;
+
+class Route
 	{
 		private $_path;
 		private $_controller;
@@ -53,26 +58,39 @@
 		public function run($httpRequest,$config)
 		{
 			$controller = null;
-			$controllerName = $this->_controller ."Controller";
-			//echo '//-----------------------------controllerNAME-------------------------------//'.'</br>';
-			//var_dump ($controllerName);
-            if(class_exists($controllerName))
+			$Namecontroller = $this->_controller ."Controller";       			
+			                                                        // in the switch statement ---> namespace statement
+																	switch ($Namecontroller) 
+																	{
+																		case 'HomeController' : 
+																			                                              $Namecontroller='Home'.'\\'.$Namecontroller ;
+																		break;
+
+																		case 'ForumController' : 
+																			                                             $Namecontroller='Forum'.'\\'.$Namecontroller ;
+						                                                break;	
+																	}      
+
+            if(class_exists($Namecontroller))
             {				
-                $controller = new $controllerName($httpRequest,$config);
+                $controller = new $Namecontroller($httpRequest,$config);//controler instanciation without namespace statement
+
                 if(method_exists($controller, $this->_action))
-                {
-                    $controller->{$this->_action}(...$httpRequest->getParam());
+				 {
+					 echo  '$this--->_action=='.$this->_action .'</br>';         
+				   //  var_dump( $httpRequest->getParam()) .'</br>';
+				                                                                                                           
+					$controller->{$this->_action}(...$httpRequest->getParam());
                 }
                 else
                 {
-                    throw new ActionNotFoundException();
+                    throw new NoAct\ActionNotFoundException();
                 }
             }
             else
             {
 				//echo "zebi" ;
-				throw new ControllerNotFoundException();	
-            }
-			
+				throw new  NoControl\ControllerNotFoundException();	
+            }			
 		}
 	}

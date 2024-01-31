@@ -1,6 +1,6 @@
-
 <?php
-	class NoRouteFoundException extends Exception
+ namespace  noRoute ; 
+ class NoRouteFoundException extends \Exception
 	{
 		private $_httpRequest;
 		
