@@ -27,12 +27,7 @@ class Router
 			//echo 'je suis dans la fonction findRoute'.'</br>';
 			//ECHO '====$url='.$url.'======='.'</br>';
 			//var_dump ($url);
-<<<<<<< HEAD
-			$method =$httpRequest->getMethod();
-
-=======
 			$method = $httpRequest->getMethod();
->>>>>>> c89f5c9b48b76c84ea7280638c9db1ded60d3395
 			//var_dump ($method);
 			$routeFound = array_filter($this->_listRoute,function($route) use ($url,$method)
 			{
