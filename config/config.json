@@ -31,8 +31,7 @@
 		"Router-Router",	
 		"BaseController-BaseController",		
 		"Home-HomeController",
-		"Forum-ForumController",
-		"VIEWForum-Forum",	
+		"Forum-ForumController",	
 		"Route-ControllerNotFoundException"
 	]
 	,		
