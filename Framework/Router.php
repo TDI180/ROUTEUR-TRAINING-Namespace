@@ -20,7 +20,6 @@ class Router
 		
 		public function findRoute($httpRequest,$basepath)
 		{
-
 			//echo '====getUrl===>'.$httpRequest->getUrl().'</br>';
 			//echo '===getMethod====>'.$httpRequest->getMethod().'</br>';
 			$url = str_replace($basepath,"",$httpRequest->getUrl());
@@ -29,7 +28,6 @@ class Router
 			//var_dump ($url);
 
 			$method = $httpRequest->getMethod();
-
 
 			//var_dump ($method);
 			$routeFound = array_filter($this->_listRoute,function($route) use ($url,$method)
@@ -41,8 +39,7 @@ class Router
 				return preg_match("#^" . $route->path . "$#", $url) && $route->method == $method;
 				/*echo '********************************************************</br>';
 				var_dump (preg_match("#^" . $route->path . "$#", $url)) ;
-				echo '********************************************************</br>';*/
-				
+				echo '********************************************************</br>';*/				
 			});
 
 		 	/*echo 'zebiroute'.'</br>';
