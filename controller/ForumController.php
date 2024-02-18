@@ -15,10 +15,10 @@ class ForumController extends B\BaseController
 							 // $this->ForumModel=new ForumModel("blog","article");
 							  $content_forum=$this->ForumModel->article();//content of the view	
 							  $contentView="null";					  
-							                                            ob_start();							                                                             
-																		                       $test=new article_forum($content_forum);										
-							                                                                   $content_article=$test->articles();//fill the view 
-																							   $test="honda";
+							                ob_start();							                                                             
+												  $test=new article_forum($content_forum);										
+							                      $content_article=$test->articles();//fill the view 
+												   $test="honda";
 							  $contentView=ob_get_clean();//Opening the buffer to store all output from 
 							  
 
